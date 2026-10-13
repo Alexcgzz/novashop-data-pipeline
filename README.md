@@ -19,10 +19,10 @@ Devoluciones/cancelaciones: ¿qué % de pedidos se cancelan o devuelven, y cuán
 
 ```mermaid
 flowchart LR
-    A[CSV crudos | ~45K registros] --> B[pandas | Limpiezas y modelado]
-    B --> C[Parquet | Tipado y comprimido]
-    C --> D[AWS S3 | data lake]
-    D --> E[AWS Athena | SQL]
+    A[CSV crudos / ~45K registros] --> B[pandas / Limpiezas y modelado]
+    B --> C[Parquet / Tipado y comprimido]
+    C --> D[AWS S3 / data lake]
+    D --> E[AWS Athena / SQL]
     E --> F[5 Insights de negocio]
 ```
 
